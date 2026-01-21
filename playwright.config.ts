@@ -11,7 +11,6 @@ export default defineConfig({
 
   use: {
     trace: 'on-first-retry',
-    headless: false,
   },
 
   projects: [
