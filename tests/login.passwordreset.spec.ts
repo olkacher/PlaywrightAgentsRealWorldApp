@@ -13,7 +13,7 @@ test.describe('Login Page', () => {
     if (await forgot.count()) {
       await forgot.click();
       // 3. Enter a registered email and submit the reset request.
-      await page.getByRole('textbox', { name: /email|username/i }).fill('user@example.com');
+      await page.getByRole('textbox', { name: /email|username/i }).fill('Solon_Robel60');
       await page.getByRole('button', { name: /submit|send|reset/i }).click();
 
       // 4. Observe UI confirmation message.

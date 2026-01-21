@@ -15,7 +15,7 @@ Test plan covering functionality, validation, security, and error handling for t
 **File:** `tests/login.spec.ts`
 
 **Steps:**
-  1. Assumptions: browser cleared, test account exists (user@example.com / P@ssw0rd).
+  1. Assumptions: browser cleared, test account exists (Solon_Robel60 / s3cret).
   2. 1. Navigate to the application root URL.
   3. 2. Open the login page (click 'Login' or go to /login).
   4. 3. Enter registered email and password.

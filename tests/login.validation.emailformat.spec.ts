@@ -10,7 +10,7 @@ test.describe('Login Page', () => {
 
     // 2. Enter invalid email format and a password.
     await page.getByRole('textbox', { name: 'Username' }).fill('not-an-email');
-    await page.getByRole('textbox', { name: 'Password' }).fill('P@ssw0rd');
+    await page.getByRole('textbox', { name: 'Password' }).fill('s3cret');
 
     // 3. Submit the form.
     await page.locator('[data-test="signin-submit"]').click();

@@ -11,7 +11,7 @@ test.describe('Login Page', () => {
     // 2. Enter XSS payloads into email or username fields.
     const payload = '<script>alert(1)</script>';
     await page.getByRole('textbox', { name: 'Username' }).fill(payload);
-    await page.getByRole('textbox', { name: 'Password' }).fill('P@ssw0rd');
+    await page.getByRole('textbox', { name: 'Password' }).fill('s3cret');
 
     // 3. Submit the form or trigger any client-side rendering of that input.
     await page.locator('[data-test="signin-submit"]').click();

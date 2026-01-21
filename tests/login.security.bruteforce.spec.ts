@@ -10,7 +10,7 @@ test.describe('Login Page', () => {
 
     // 2. From a single client, perform a rapid series of failed login attempts.
     for (let i = 0; i < 8; i++) {
-      await page.getByRole('textbox', { name: 'Username' }).fill('user@example.com');
+      await page.getByRole('textbox', { name: 'Username' }).fill('Solon_Robel60');
       await page.getByRole('textbox', { name: 'Password' }).fill(`wrong-pass-${i}`);
       await page.locator('[data-test="signin-submit"]').click();
       // brief check for failure alert
@@ -18,8 +18,8 @@ test.describe('Login Page', () => {
     }
 
     // 4. Attempt to login with correct credentials after the threshold is reached.
-    await page.getByRole('textbox', { name: 'Username' }).fill('user@example.com');
-    await page.getByRole('textbox', { name: 'Password' }).fill('P@ssw0rd');
+    await page.getByRole('textbox', { name: 'Username' }).fill('Solon_Robel60');
+    await page.getByRole('textbox', { name: 'Password' }).fill('s3cret');
     await page.locator('[data-test="signin-submit"]').click();
 
     // Expect either success blocked or a mitigation message; assert either an alert or signout visible.

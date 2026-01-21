@@ -16,8 +16,8 @@ test.describe('Login Page', () => {
     // 3. Enter registered email and password.
     const username = page.getByRole('textbox', { name: 'Username' });
     const password = page.getByRole('textbox', { name: 'Password' });
-    await username.fill('user@example.com');
-    await password.fill('P@ssw0rd');
+    await username.fill('Solon_Robel60');
+    await password.fill('s3cret');
 
     // 4. Click the primary 'Sign in' / 'Login' button.
     await page.locator('[data-test="signin-submit"]').click();

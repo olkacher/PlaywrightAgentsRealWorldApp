@@ -9,7 +9,7 @@ test.describe('Login Page', () => {
     await page.goto('http://frontend-ta-realworldapp.apps.os-prod.lab.proficom.de/signin');
 
     // 2. Enter a registered email and an incorrect password.
-    await page.getByRole('textbox', { name: 'Username' }).fill('user@example.com');
+    await page.getByRole('textbox', { name: 'Username' }).fill('Solon_Robel60');
     await page.getByRole('textbox', { name: 'Password' }).fill('incorrect-password');
 
     // 3. Submit the form.
