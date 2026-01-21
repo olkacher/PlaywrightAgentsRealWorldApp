@@ -1,16 +1,11 @@
 import { test, expect } from '@playwright/test';
-import { testConfig } from 'config/testConfig';
-
 
 test('seed - login flow smoke', async ({ page }) => {
-const { baseURL, testUsers, timeouts } = testConfig;
-
-    await page.goto(baseURL);
-    await page.fill('#username', testUsers.validUser.username);
-    await page.fill('#password', testUsers.validUser.password);
+    await page.goto('http://frontend-ta-realworldapp.apps.os-prod.lab.proficom.de/');
+    await page.fill('#username', 'Solon_Robel60');
+    await page.fill('#password', 's3cret');
     await page.click('[data-test="signin-submit"]');
 
-    await page.waitForSelector('[data-test="sidenav-signout"]', {
-      timeout: timeouts.medium
-    });
+    await page.waitForSelector('[data-test="sidenav-signout"]');
+
   });
